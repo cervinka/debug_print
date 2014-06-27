@@ -6,7 +6,7 @@ Ever placed `puts`, `pp` or `ap` for debugging purposes in the code and then for
 
 Add this line to your application's Gemfile:
 
-    gem 'debug_print', git: 'https://github.com/cervinka/debug_print.git'
+    gem 'debug_print_ext', require: 'debug_print'
 
 And then execute:
 
