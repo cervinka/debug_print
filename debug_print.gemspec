@@ -4,7 +4,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'debug_print/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "debug_print"
+  spec.name          = "debug_print_ext"
   spec.version       = DebugPrint::VERSION
   spec.authors       = ["Petr Cervinka"]
   spec.email         = ["petr@petrcervinka.cz"]
