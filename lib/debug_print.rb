@@ -33,7 +33,8 @@ module Kernel
   def debug_print(object, options = {})
     return if DebugPrint.silent
     print = options[:printer] || DebugPrint.printer
-    puts "[DEBUG: from #{caller.first}]"
+    label = options[:label] || 'DEBUG'
+    puts "[#{label}: from #{caller.first}]"
     Kernel.send(print, object)
   end
 
