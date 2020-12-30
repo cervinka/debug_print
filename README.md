@@ -36,7 +36,7 @@ DebugPrint.printer = :p     # use standard p method for printing
 DebugPrint.printer = :puts  # use standard puts method for printing
 
 # set printing method ad-hoc
-dp object_to_print, printer: ap
+dp object_to_print, printer: :ap
 ```
 
 You can also silent all calls to `dp` by `DebugPrint.silent = true`
