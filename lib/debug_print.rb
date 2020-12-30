@@ -38,5 +38,17 @@ module Kernel
     Kernel.send(print, object)
   end
 
+  def dputs(object, options = {})
+    debug_print(object, options.merge({printer: :puts}))
+  end
+
+  def dpp(object, options = {})
+    debug_print(object, options.merge({printer: :pp}))
+  end
+
+  def dap(object, options = {})
+    debug_print(object, options.merge({printer: :ap}))
+  end
+
   alias :dp :debug_print
 end
